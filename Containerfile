@@ -4,10 +4,10 @@ FROM i.anatase.org/anatase:stable
 RUN dnf -y install \
     alsa-lib \
     alsa-lib.i686 \
-    && dnf clean all
     pipewire-libs.i686 \
     pulseaudio-libs.i686 \
-    pipewire-alsa.i686
+    pipewire-alsa.i686 \
+    && dnf clean all
 
 # Cleanup (leave this here)
 RUN rm -rf /var && \
