@@ -18,6 +18,7 @@ RUN printf '%s\n' \
         pulseaudio-libs.i686 \
         pipewire-alsa.i686 \
         libjpeg8.x86_64 \
+        dotnet-runtime-10.0 \
     && rm -f /etc/yum.repos.d/libjpeg8-copr.repo \
     && dnf clean all
 
