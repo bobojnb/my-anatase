@@ -5,8 +5,6 @@ RUN dnf -y install \
     alsa-lib \
     alsa-lib.i686 \
     && dnf clean all
-
-RUN dnf -y install \
     pipewire-libs.i686 \
     pulseaudio-libs.i686 \
     pipewire-alsa.i686
