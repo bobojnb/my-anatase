@@ -5,6 +5,9 @@ FROM i.anatase.org/anatase:stable
 RUN dnf -y install alsa-lib && \
     dnf clean all
 
+RUN dnf -y install alsa-lib alsa-lib.i686 && \
+    dnf clean all
+
 # Cleanup (leave this here)
 RUN rm -rf /var && \
     mkdir -p /var/tmp
