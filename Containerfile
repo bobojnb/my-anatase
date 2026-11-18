@@ -19,6 +19,7 @@ RUN printf '%s\n' \
         pipewire-alsa.i686 \
         libjpeg8.x86_64 \
         dotnet-runtime-10.0 \
+        libXScrnSaver \
     && rm -f /etc/yum.repos.d/libjpeg8-copr.repo \
     && dnf clean all
 
